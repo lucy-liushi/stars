@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="imgs">
+
+  	<image class="img" src="{{detail.fileID}}" mode="widthFix"></image></view>
+  <view class="user">
+  	<image src="{{detail.avatarUrl}}" class="avatar"/>
+    <view class="contain">
+      <view>
+         <text class="myname">{{detail.nickName}}</text>
+        <view class="time">{{time}}</view>
+      </view>
+    </view>
+     <button type="primary" size="mini" class="btn" open-type="contact" plain="{{true}}">问一下</button>
+  </view>
+  <view class="info">
+    <rich-text nodes="{{detail.intro}}">
+    </rich-text>
+  </view>
+</view>

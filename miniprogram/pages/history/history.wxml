@@ -1,0 +1,8 @@
+<view class="container">
+    <view class="item" wx:for="{{list}}" wx:key="index">
+    <view class="text">{{item.realname}}</view>
+    <image class="img" src="/images/删除.png" bindtap="del" id="{{item._id}}" data-index='{{index}}'></image>
+    </view>
+      
+    
+</view>

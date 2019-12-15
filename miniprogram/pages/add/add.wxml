@@ -1,0 +1,40 @@
+<form bindsubmit="submit">
+    <view class="contioner">
+        <view class="line">
+            <label>姓名：</label><input type="text" name="realname" ref='input'/>
+        </view>
+
+        <view class="line">
+            <label>性别：</label><radio-group name="sex">
+                <radio value="1" checked>男</radio>
+                <radio value="2">女</radio>
+            </radio-group>
+        </view>
+        <view class="line">
+            <picker mode="region"  bindchange="region"  name="region" value="{{region}}">
+            地址：{{region}}
+        </picker>
+    </view>
+
+    <view class="line">
+        <image mode="aspectFill" class="selectImg" src="{{localImage}}" bindtap="addPic" />
+    </view>
+
+    <view>
+        介绍：
+        <view>
+            <editor id="text" 
+            placeholder="请填写个人简介" 
+            show-img-toolbar="{{true}}" 
+            show-img-size="{{true}}" 
+            bindinput="myEditorInput">
+            </editor>
+
+
+            <!-- <textarea name="intro" id="text" cols="30" rows="10" ref='intro'></textarea> -->
+        </view>
+    </view>
+
+    <button form-type="submit" type="primary">提交</button>
+</view>
+</form>

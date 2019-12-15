@@ -1,0 +1,47 @@
+label {
+    float: left;
+}
+
+input {
+    border: 1px solid #ccc;
+    width: 500rpx;
+    height: 60rpx;
+    margin-bottom: 10rpx;
+}
+radio-group {
+    margin-bottom: 10rpx;
+}
+
+picker {
+    margin-bottom: 10rpx;
+}
+
+#text {
+    border: 1px solid #ccc;
+    margin-bottom: 30rpx;
+}
+
+.contioner {
+    padding: 10rpx;
+    box-sizing: border-box;
+
+}
+
+radio {
+    width: 200rpx;
+}
+
+.line {
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+    text-align: cneter;
+}
+
+.selectImg {
+    width: 150rpx;
+    height: 150rpx;
+    position: relative;
+    left: 20rpx;
+    /* border:1rpx solid #666; */
+}
+
